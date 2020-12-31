@@ -1,0 +1,52 @@
+@import 'blocks/other';
+
+@import 'blocks/container';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+//@import 'blocks/tabs';
+@import 'blocks/slick';
+@import 'blocks/page-tabs';
+@import 'blocks/form';
+@import 'blocks/modal';
+@import 'blocks/sort';
+@import 'blocks/recently-viewed';
+@import 'blocks/search-results';
+
+
+// Navigation-blocks
+@import 'blocks/nav/breadcrumbs';
+@import 'blocks/nav/pagination';
+
+// Main
+@import 'blocks/main/header';
+@import 'blocks/main/catalog';
+@import 'blocks/main/product';
+@import 'blocks/main/footer';
+@import 'blocks/main/basket';
+
+
+// Home-page
+@import 'blocks/home-page/promo';
+@import 'blocks/home-page/cards-slider';
+@import 'blocks/home-page//banner-slider';
+@import 'blocks/home-page/features';
+@import 'blocks/home-page/categories';
+@import 'blocks/home-page/popular-cards';
+@import 'blocks/home-page/card';
+@import 'blocks/home-page/logos';
+
+
+// Pages
+@import 'blocks/pages/news';
+@import 'blocks/pages/contacts';
+@import 'blocks/pages/payment';
+@import 'blocks/pages/profile';
+@import 'blocks/pages/order';
+@import 'blocks/pages/favorite';
+@import 'blocks/pages/user-agreement';
+@import 'blocks/pages/404';
+
+@import 'blocks/sale';
+
+
+

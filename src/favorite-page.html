@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html')
+<body bgcolor="#E5E5E5">
+
+    @@include('templates/_header.html')
+
+    @@include('templates/_hamburger-menu.html')
+
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>Личный кабинет</span>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>Избранное</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title page-title">
+                Избранное
+            </h1>
+            <div class="row">
+                <aside class="col-12 col-lg-3">
+                    <nav class="page-tabs">
+                        <a href="private-page.html" class="page-tab">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                         
+                            Мой профиль
+                        </a>
+                        <a href="order-page.html" class="page-tab">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 6H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 12H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 18H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 6H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 12H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 18H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                           
+                            Мои заказы
+                        </a>
+                        <span class="page-tab page-tab--active">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.8401 2.60987C20.3294 2.09888 19.7229 1.69352 19.0555 1.41696C18.388 1.14039 17.6726 0.998047 16.9501 0.998047C16.2276 0.998047 15.5122 1.14039 14.8448 1.41696C14.1773 1.69352 13.5709 2.09888 13.0601 2.60987L12.0001 3.66987L10.9401 2.60987C9.90843 1.57818 8.50915 0.998582 7.05012 0.998582C5.59109 0.998582 4.19181 1.57818 3.16012 2.60987C2.12843 3.64156 1.54883 5.04084 1.54883 6.49987C1.54883 7.95891 2.12843 9.35818 3.16012 10.3899L4.22012 11.4499L12.0001 19.2299L19.7801 11.4499L20.8401 10.3899C21.3511 9.87912 21.7565 9.27269 22.033 8.60523C22.3096 7.93777 22.4519 7.22236 22.4519 6.49987C22.4519 5.77738 22.3096 5.06198 22.033 4.39452C21.7565 3.72706 21.3511 3.12063 20.8401 2.60987V2.60987Z" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                          
+                            Избранное
+                        </span>
+                        <button class="page-tab exit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 17L21 12L16 7" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H9" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                          
+                            Выход
+                        </button>
+                    </nav>
+                </aside>
+                <section class="col-12 col-lg-9 white-box favorite">
+                    <ul class="favorite__list">
+                        <li class="card favorite__list-item favorite-card">
+                            <div class="favorite-card__header">
+                                <button class="compare-btn favorite-card__compare-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20V10" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 20V4" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 20V16" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Сравнение</span>
+                                </button>
+                                <button class="delete-btn favorite-card__delete-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66602 4.99996V3.33329C6.66602 2.89127 6.84161 2.46734 7.15417 2.15478C7.46673 1.84222 7.89066 1.66663 8.33268 1.66663H11.666C12.108 1.66663 12.532 1.84222 12.8445 2.15478C13.1571 2.46734 13.3327 2.89127 13.3327 3.33329V4.99996M15.8327 4.99996V16.6666C15.8327 17.1087 15.6571 17.5326 15.3445 17.8451C15.032 18.1577 14.608 18.3333 14.166 18.3333H5.83268C5.39065 18.3333 4.96673 18.1577 4.65417 17.8451C4.34161 17.5326 4.16602 17.1087 4.16602 16.6666V4.99996H15.8327Z" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.33398 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.666 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </button>
+                            </div>
+                            <img class="card-img favorite-card__img" src="img/catalog/1.png" alt="">
+                            <a href="product-page.html" class="card-rate favorite-card__rate" data-rateyo-rating="4"></a>
+                            <p class="text product-name favorite-card__product-name">
+                                Тепловизионный прицел<br> Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify favorite-card__notify"></p>
+                            <div class="descr card-price favorite-card__price">
+                                879 000 руб.
+                            </div>
+                            <button class="button basket-btn favorite-card__basket-btn">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M6.00065 15.1663C6.36884 15.1663 6.66732 14.8679 6.66732 14.4997C6.66732 14.1315 6.36884 13.833 6.00065 13.833C5.63246 13.833 5.33398 14.1315 5.33398 14.4997C5.33398 14.8679 5.63246 15.1663 6.00065 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3327 15.1663C13.7009 15.1663 13.9993 14.8679 13.9993 14.4997C13.9993 14.1315 13.7009 13.833 13.3327 13.833C12.9645 13.833 12.666 14.1315 12.666 14.4997C12.666 14.8679 12.9645 15.1663 13.3327 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M0.666016 1.16699H3.33268L5.11935 10.0937C5.18031 10.4006 5.34729 10.6763 5.59105 10.8725C5.8348 11.0688 6.13981 11.173 6.45268 11.167H12.9327C13.2455 11.173 13.5506 11.0688 13.7943 10.8725C14.0381 10.6763 14.2051 10.4006 14.266 10.0937L15.3327 4.50033H3.99935" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                                В корзину
+                            </button>
+                            <button class="button notify-btn favorite-card__notify-btn">
+                                Уведомить
+                            </button>
+                            <button class="one-click-btn favorite-card__one-click-btn">
+                                Купить в один клик
+                            </button>
+                        </li>
+                        <li class="card not-available favorite__list-item favorite-card">
+                            <div class="favorite-card__header">
+                                <button class="compare-btn favorite-card__compare-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20V10" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 20V4" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 20V16" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Сравнение</span>
+                                </button>
+                                <button class="delete-btn favorite-card__delete-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66602 4.99996V3.33329C6.66602 2.89127 6.84161 2.46734 7.15417 2.15478C7.46673 1.84222 7.89066 1.66663 8.33268 1.66663H11.666C12.108 1.66663 12.532 1.84222 12.8445 2.15478C13.1571 2.46734 13.3327 2.89127 13.3327 3.33329V4.99996M15.8327 4.99996V16.6666C15.8327 17.1087 15.6571 17.5326 15.3445 17.8451C15.032 18.1577 14.608 18.3333 14.166 18.3333H5.83268C5.39065 18.3333 4.96673 18.1577 4.65417 17.8451C4.34161 17.5326 4.16602 17.1087 4.16602 16.6666V4.99996H15.8327Z" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.33398 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.666 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </button>
+                            </div>
+                            <img class="card-img favorite-card__img" src="img/catalog/1.png" alt="">
+                            <a href="product-page.html" class="card-rate favorite-card__rate" data-rateyo-rating="4"></a>
+                            <p class="text product-name favorite-card__product-name">
+                                Тепловизионный прицел<br> Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify favorite-card__notify"></p>
+                            <div class="descr card-price favorite-card__price">
+                                879 000 руб.
+                            </div>
+                            <button class="button basket-btn favorite-card__basket-btn">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M6.00065 15.1663C6.36884 15.1663 6.66732 14.8679 6.66732 14.4997C6.66732 14.1315 6.36884 13.833 6.00065 13.833C5.63246 13.833 5.33398 14.1315 5.33398 14.4997C5.33398 14.8679 5.63246 15.1663 6.00065 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3327 15.1663C13.7009 15.1663 13.9993 14.8679 13.9993 14.4997C13.9993 14.1315 13.7009 13.833 13.3327 13.833C12.9645 13.833 12.666 14.1315 12.666 14.4997C12.666 14.8679 12.9645 15.1663 13.3327 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M0.666016 1.16699H3.33268L5.11935 10.0937C5.18031 10.4006 5.34729 10.6763 5.59105 10.8725C5.8348 11.0688 6.13981 11.173 6.45268 11.167H12.9327C13.2455 11.173 13.5506 11.0688 13.7943 10.8725C14.0381 10.6763 14.2051 10.4006 14.266 10.0937L15.3327 4.50033H3.99935" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                                В корзину
+                            </button>
+                            <button class="button notify-btn favorite-card__notify-btn">
+                                Уведомить
+                            </button>
+                            <button class="one-click-btn favorite-card__one-click-btn">
+                                Купить в один клик
+                            </button>
+                        </li>
+                        <li class="card favorite__list-item favorite-card">
+                            <div class="favorite-card__header">
+                                <button class="compare-btn favorite-card__compare-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20V10" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 20V4" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 20V16" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Сравнение</span>
+                                </button>
+                                <button class="delete-btn favorite-card__delete-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66602 4.99996V3.33329C6.66602 2.89127 6.84161 2.46734 7.15417 2.15478C7.46673 1.84222 7.89066 1.66663 8.33268 1.66663H11.666C12.108 1.66663 12.532 1.84222 12.8445 2.15478C13.1571 2.46734 13.3327 2.89127 13.3327 3.33329V4.99996M15.8327 4.99996V16.6666C15.8327 17.1087 15.6571 17.5326 15.3445 17.8451C15.032 18.1577 14.608 18.3333 14.166 18.3333H5.83268C5.39065 18.3333 4.96673 18.1577 4.65417 17.8451C4.34161 17.5326 4.16602 17.1087 4.16602 16.6666V4.99996H15.8327Z" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.33398 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.666 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </button>
+                            </div>
+                            <img class="card-img favorite-card__img" src="img/catalog/1.png" alt="">
+                            <a href="product-page.html" class="card-rate favorite-card__rate" data-rateyo-rating="4"></a>
+                            <p class="text product-name favorite-card__product-name">
+                                Тепловизионный прицел<br> Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify favorite-card__notify"></p>
+                            <div class="descr card-price favorite-card__price">
+                                879 000 руб.
+                            </div>
+                            <button class="button basket-btn favorite-card__basket-btn">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M6.00065 15.1663C6.36884 15.1663 6.66732 14.8679 6.66732 14.4997C6.66732 14.1315 6.36884 13.833 6.00065 13.833C5.63246 13.833 5.33398 14.1315 5.33398 14.4997C5.33398 14.8679 5.63246 15.1663 6.00065 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3327 15.1663C13.7009 15.1663 13.9993 14.8679 13.9993 14.4997C13.9993 14.1315 13.7009 13.833 13.3327 13.833C12.9645 13.833 12.666 14.1315 12.666 14.4997C12.666 14.8679 12.9645 15.1663 13.3327 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M0.666016 1.16699H3.33268L5.11935 10.0937C5.18031 10.4006 5.34729 10.6763 5.59105 10.8725C5.8348 11.0688 6.13981 11.173 6.45268 11.167H12.9327C13.2455 11.173 13.5506 11.0688 13.7943 10.8725C14.0381 10.6763 14.2051 10.4006 14.266 10.0937L15.3327 4.50033H3.99935" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>      
+                                В корзину
+                            </button>
+                            <button class="button notify-btn favorite-card__notify-btn">
+                                Уведомить
+                            </button>
+                            <button class="one-click-btn favorite-card__one-click-btn">
+                                Купить в один клик
+                            </button>
+                        </li>
+                        <li class="card favorite__list-item favorite-card">
+                            <div class="favorite-card__header">
+                                <button class="compare-btn favorite-card__compare-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20V10" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 20V4" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 20V16" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Сравнение</span>
+                                </button>
+                                <button class="delete-btn favorite-card__delete-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66602 4.99996V3.33329C6.66602 2.89127 6.84161 2.46734 7.15417 2.15478C7.46673 1.84222 7.89066 1.66663 8.33268 1.66663H11.666C12.108 1.66663 12.532 1.84222 12.8445 2.15478C13.1571 2.46734 13.3327 2.89127 13.3327 3.33329V4.99996M15.8327 4.99996V16.6666C15.8327 17.1087 15.6571 17.5326 15.3445 17.8451C15.032 18.1577 14.608 18.3333 14.166 18.3333H5.83268C5.39065 18.3333 4.96673 18.1577 4.65417 17.8451C4.34161 17.5326 4.16602 17.1087 4.16602 16.6666V4.99996H15.8327Z" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.33398 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.666 9.16663V14.1666" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </button>
+                            </div>
+                            <img class="card-img favorite-card__img" src="img/catalog/1.png" alt="">
+                            <a href="product-page.html" class="card-rate favorite-card__rate" data-rateyo-rating="4"></a>
+                            <p class="text product-name favorite-card__product-name">
+                                Тепловизионный прицел<br> Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify favorite-card__notify"></p>
+                            <div class="descr card-price favorite-card__price">
+                                879 000 руб.
+                            </div>
+                            <button class="button basket-btn favorite-card__basket-btn">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M6.00065 15.1663C6.36884 15.1663 6.66732 14.8679 6.66732 14.4997C6.66732 14.1315 6.36884 13.833 6.00065 13.833C5.63246 13.833 5.33398 14.1315 5.33398 14.4997C5.33398 14.8679 5.63246 15.1663 6.00065 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3327 15.1663C13.7009 15.1663 13.9993 14.8679 13.9993 14.4997C13.9993 14.1315 13.7009 13.833 13.3327 13.833C12.9645 13.833 12.666 14.1315 12.666 14.4997C12.666 14.8679 12.9645 15.1663 13.3327 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M0.666016 1.16699H3.33268L5.11935 10.0937C5.18031 10.4006 5.34729 10.6763 5.59105 10.8725C5.8348 11.0688 6.13981 11.173 6.45268 11.167H12.9327C13.2455 11.173 13.5506 11.0688 13.7943 10.8725C14.0381 10.6763 14.2051 10.4006 14.266 10.0937L15.3327 4.50033H3.99935" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                                В корзину
+                            </button>
+                            <button class="button notify-btn favorite-card__notify-btn">
+                                Уведомить
+                            </button>
+                            <button class="one-click-btn favorite-card__one-click-btn">
+                                Купить в один клик
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="favorite__empty">
+                        <div class="favorite__empty-title">
+                            В Избранном пока ничего нет
+                        </div>
+                        <p class="favorite__empty-text">
+                            Добавляйте товары в Избранное с помощью ❤️️
+                        </p>
+                        <a class="button favorite__empty-link" href="catalog-page.html">
+                            В каталог
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <section class="recently-viewed">
+                <div class="container">
+                    <h2 class="title recently-viewed__title">
+                        Вы недавно смотрели
+                    </h2>
+                    <div class="recently-viewed__inner">
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <form id="authorization" class="modal hide">
+                    <h2 class="title modal__form-title">
+                        Авторизация
+                    </h2>
+                    <label for="" class="label">
+                        Эл. почта, логин<span>*</span>
+                    </label>
+                    <input type="text" class="input" required>
+                    <label for="" class="label">
+                        Пароль<span>*</span>
+                    </label>
+                    <input class="input" type="password" minlength="6" maxlength="10" required>
+                    <div class="modal__form-buttons">
+                        <button class="button enter-btn">Войти</button>
+                        <button class="forgot-password">
+                            Забыли пароль?
+                        </button>
+                    </div>
+                    <div class="modal__form-footer modal__form-footer--border">
+                        Если у вас еще нет учетной записи, <button class="registration-btn">зарегистрируйтесь</button>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="col-12 col-md-6 offset-md-3">
+                <form id="change-password" class="modal">
+                    <h2 class="title modal__form-title">
+                        Изменение пароля
+                    </h2>
+                    <label for="" class="label">
+                        Эл. почта, логин<span>*</span>
+                    </label>
+                    <input type="email" class="input" required>
+                    <button class="button send-password-btn">
+                        Выслать
+                    </button>
+                    <div class="modal__form-footer modal__form-footer--border">
+                        Укажите адрес электронной почты, с которым вы регистрировались ранее, и мы вышлем инструкции по смене пароля. 
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3">
+                <form id="registration" class="modal hide">
+                    <h2 class="title modal__form-title">
+                        Регистрация
+                    </h2>
+                    <label for="" class="label">
+                        Введите ваш e-mail<span>*</span>
+                    </label>
+                    <input type="email" class="input" required>
+                    <label for="" class="label">
+                        Придумайте пароль (не короче шести символов)<span>*</span>
+                    </label>
+                    <input id="newPassword" class="input" type="password" minlength="6" maxlength="10" required>
+                    <label for="" class="label">
+                        Повторите пароль<span>*</span>
+                    </label>
+                    <input id="confirmPassword" class="input" type="password" minlength="6" maxlength="10" required>
+                    <button class="button register-btn">
+                        Зарегистрироваться
+                    </button>
+                    <div class="modal__form-footer modal__form-footer--border">
+                        Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным <a href="user-agreement.html">здесь текстом.</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @@include('templates/_enter.html')
+
+    @@include('templates/_footer.html')
+
+    <div class="overlay">
+        @@include('templates/_modals.html')
+    </div>
+
+    @@include('_js.html')
+</body>
+</html>

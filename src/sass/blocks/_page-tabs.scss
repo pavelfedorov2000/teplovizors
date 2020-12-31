@@ -1,0 +1,72 @@
+.page-tab {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 24px 0 24px 22px;
+    border-bottom: $border;
+    &:last-child {
+        border-bottom: none;
+    }
+    svg {
+        margin-right: 10px;
+    }
+    &--active {
+        font-weight: 600;
+        color: $accent;
+        svg path {
+            stroke: $accent;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .page-tabs {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .page-tab {
+        padding: 10px 13px;
+        border: 1px solid #E0E0E0;
+        border-radius: $card-radius;
+        margin-right: 10px;
+        &--active {
+            background-color: $button;
+            color: $white;
+            svg path {
+                stroke: $white;
+            }
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .page-tabs {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .page-tab {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 575px) {
+    .page-tabs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .page-tab {
+        @include center;
+        width: 100%;
+        border: 1px solid #E0E0E0;
+        border-radius: $card-radius;
+        padding: 10px 0;
+        margin: 0;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

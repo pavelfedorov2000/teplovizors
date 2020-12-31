@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html')
+<body bgcolor="#E5E5E5">
+
+    @@include('templates/_header.html')
+
+    @@include('templates/_hamburger-menu.html')
+
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>Личный кабинет</span>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>Мои заказы</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title page-title">
+                Мой профиль
+            </h1>
+            <div class="row">
+                <aside class="col-12 col-lg-3">
+                    <nav class="page-tabs">
+                        <a href="private-page.html" class="page-tab">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                         
+                            Мой профиль
+                        </a>
+                        <span class="page-tab page-tab--active">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 6H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 12H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 18H21" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 6H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 12H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 18H3.01" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                           
+                            Мои заказы
+                        </span>
+                        <a href="favorite-page.html" class="page-tab">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.8401 2.60987C20.3294 2.09888 19.7229 1.69352 19.0555 1.41696C18.388 1.14039 17.6726 0.998047 16.9501 0.998047C16.2276 0.998047 15.5122 1.14039 14.8448 1.41696C14.1773 1.69352 13.5709 2.09888 13.0601 2.60987L12.0001 3.66987L10.9401 2.60987C9.90843 1.57818 8.50915 0.998582 7.05012 0.998582C5.59109 0.998582 4.19181 1.57818 3.16012 2.60987C2.12843 3.64156 1.54883 5.04084 1.54883 6.49987C1.54883 7.95891 2.12843 9.35818 3.16012 10.3899L4.22012 11.4499L12.0001 19.2299L19.7801 11.4499L20.8401 10.3899C21.3511 9.87912 21.7565 9.27269 22.033 8.60523C22.3096 7.93777 22.4519 7.22236 22.4519 6.49987C22.4519 5.77738 22.3096 5.06198 22.033 4.39452C21.7565 3.72706 21.3511 3.12063 20.8401 2.60987V2.60987Z" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                          
+                            Избранное
+                        </a>
+                        <button class="page-tab exit-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 17L21 12L16 7" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H9" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                          
+                            Выход
+                        </button>
+                    </nav>
+                </aside>
+                <section class="col-12 col-lg-9 white-box order">
+                    <ul class="order-list text">
+                        <li class="order-list__item issued">
+                            <div class="order-list__item-header dropdown">
+                                <b class="order-list__item-num">
+                                    № 232365666
+                                </b>
+                                <p class="order-list__item-sum">
+                                    655 454 руб.
+                                </p>
+                                <p class="order-list__item-status"></p>
+                                <time class="order-list__item-datetime">
+                                    13.07.2020 в 17:45
+                                </time>
+                            </div>
+                            <div class="order-list__item-drop">
+                                <ul class="ordered-products__list">
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            1 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            879 000 руб.
+                                        </b>
+                                    </li>
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            2 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            1 758 000 руб.
+                                        </b>
+                                    </li>
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            1 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            879 000 руб.
+                                        </b>
+                                    </li>
+                                </ul>
+                                <div class="order-list__item-footer">
+                                    <div>
+                                        Доставка:
+                                        <b>500 руб.</b>
+                                    </div>
+                                    <div>
+                                        Всего к оплате:
+                                        <b>2 336 634 руб.</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="order-list__item canceled">
+                            <div class="order-list__item-header dropdown">
+                                <b class="order-list__item-num">
+                                    № 232365666
+                                </b>
+                                <p class="order-list__item-sum">
+                                    655 454 руб.
+                                </p>
+                                <p class="order-list__item-status"></p>
+                                <time class="order-list__item-datetime">
+                                    13.07.2020 в 17:45
+                                </time>
+                            </div>
+                            <div class="order-list__item-drop">
+                                <ul class="ordered-products__list">
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            1 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            879 000 руб.
+                                        </b>
+                                    </li>
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            2 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            1 758 000 руб.
+                                        </b>
+                                    </li>
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            1 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            879 000 руб.
+                                        </b>
+                                    </li>
+                                </ul>
+                                <div class="order-list__item-footer">
+                                    <div>
+                                        Доставка:
+                                        <b>500 руб.</b>
+                                    </div>
+                                    <div>
+                                        Всего к оплате:
+                                        <b>2 336 634 руб.</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="order-list__item issued">
+                            <div class="order-list__item-header dropdown">
+                                <b class="order-list__item-num">
+                                    № 232365666
+                                </b>
+                                <p class="order-list__item-sum">
+                                    2 336 654 руб.
+                                </p>
+                                <p class="order-list__item-status"></p>
+                                <time class="order-list__item-datetime">
+                                    13.07.2020 в 17:45
+                                </time>
+                            </div>
+                            <div class="order-list__item-drop">
+                                <ul class="ordered-products__list">
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            1 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            879 000 руб.
+                                        </b>
+                                    </li>
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            2 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            1 758 000 руб.
+                                        </b>
+                                    </li>
+                                    <li class="ordered-products__item">
+                                        <img class="ordered-products__item-img" src="img/order.png" alt="">
+                                        <p class="ordered-products__item-name">
+                                            Тепловизор Pulsar Accolade XQ38 LRF
+                                        </p>
+                                        <p class="ordered-products__item-price">
+                                            879 000 руб.
+                                        </p>
+                                        <p class="ordered-products__item-quantity">
+                                            1 шт.
+                                        </p>
+                                        <b class="ordered-products__item-sum">
+                                            879 000 руб.
+                                        </b>
+                                    </li>
+                                </ul>
+                                <div class="order-list__item-footer">
+                                    <div>
+                                        Доставка:
+                                        <b>500 руб.</b>
+                                    </div>
+                                    <div>
+                                        Всего к оплате:
+                                        <b>2 336 634 руб.</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="recently-viewed">
+                <div class="container">
+                    <h2 class="title recently-viewed__title">
+                        Вы недавно смотрели
+                    </h2>
+                    <div class="recently-viewed__inner">
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                        <a href="product-page.html" class="recently-viewed__item">
+                            <img src="img/catalog/1.png" alt="" class="recently-viewed__item-img">
+                            <div class="card-rate recently-viewed__item-rate" data-rateyo-rating="4"></div>
+                            <p class="text recently-viewed__item-name">
+                                Тепловизионный прицел Инфратех ИТ-315
+                            </p>
+                            <p class="card-notify recently-viewed__item-notify"></p>
+                            <p class="card-price recently-viewed__item-price">
+                                879 000 руб.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <form id="authorization" class="modal hide">
+                    <h2 class="title modal__form-title">
+                        Авторизация
+                    </h2>
+                    <label for="" class="label">
+                        Эл. почта, логин<span>*</span>
+                    </label>
+                    <input type="text" class="input" required>
+                    <label for="" class="label">
+                        Пароль<span>*</span>
+                    </label>
+                    <input class="input" type="password" minlength="6" maxlength="10" required>
+                    <div class="modal__form-buttons">
+                        <button class="button enter-btn">Войти</button>
+                        <button class="forgot-password">
+                            Забыли пароль?
+                        </button>
+                    </div>
+                    <div class="modal__form-footer modal__form-footer--border">
+                        Если у вас еще нет учетной записи, <button class="registration-btn">зарегистрируйтесь</button>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="col-12 col-md-6 offset-md-3">
+                <form id="change-password" class="modal">
+                    <h2 class="title modal__form-title">
+                        Изменение пароля
+                    </h2>
+                    <label for="" class="label">
+                        Эл. почта, логин<span>*</span>
+                    </label>
+                    <input type="email" class="input" required>
+                    <button class="button send-password-btn">
+                        Выслать
+                    </button>
+                    <div class="modal__form-footer modal__form-footer--border">
+                        Укажите адрес электронной почты, с которым вы регистрировались ранее, и мы вышлем инструкции по смене пароля. 
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3">
+                <form id="registration" class="modal hide">
+                    <h2 class="title modal__form-title">
+                        Регистрация
+                    </h2>
+                    <label for="" class="label">
+                        Введите ваш e-mail<span>*</span>
+                    </label>
+                    <input type="email" class="input" required>
+                    <label for="" class="label">
+                        Придумайте пароль (не короче шести символов)<span>*</span>
+                    </label>
+                    <input id="newPassword" class="input" type="password" minlength="6" maxlength="10" required>
+                    <label for="" class="label">
+                        Повторите пароль<span>*</span>
+                    </label>
+                    <input id="confirmPassword" class="input" type="password" minlength="6" maxlength="10" required>
+                    <button class="button register-btn">
+                        Зарегистрироваться
+                    </button>
+                    <div class="modal__form-footer modal__form-footer--border">
+                        Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным <a href="user-agreement.html">здесь текстом.</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @@include('templates/_enter.html')
+
+    @@include('templates/_footer.html')
+
+    @@include('_js.html')
+</body>
+</html>

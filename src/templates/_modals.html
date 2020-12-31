@@ -1,0 +1,94 @@
+<div id="write-review" class="modal">
+    <form class="modal__form">
+        <div class="modal__close">&times;</div>
+        <div class="modal__form-header">
+            <div class="form-title modal__form-title">
+                Написать отзыв
+            </div>
+        </div>
+        <div class="modal__form-item">
+            <label class="label modal__form-label">
+                Ваше имя<span>*</span>
+            </label>
+            <input class="input modal__form-input text" type="text" required>
+        </div>
+        <div class="modal__form-item">
+            <label class="label modal__form-label">
+                Город<span>*</span>
+            </label>
+            <input class="input modal__form-input text" type="text" required>
+        </div>
+        <div class="modal__form-item">
+            <label class="label modal__form-label">
+                Ваш e-mail
+            </label>
+            <input class="input modal__form-input text" placeholder="ivan@mail.ru" required>
+        </div>
+        <div class="modal__form-item">
+            <label class="label modal__form-label">
+                Оценка
+            </label>
+            <div class="input modal__form-rate" data-rateyo-rating="3"></div>
+        </div>
+        <div class="modal__form-item">
+            <label class="label modal__form-label">
+                Отзыв<span>*</span>
+            </label>
+            <textarea class="input textarea modal__form-textarea text" placeholder="Напишите ваш отзыв" required></textarea>
+        </div>
+        <button class="button button--green form-btn" type="submit">
+            Отправить
+        </button>
+    </form>
+</div>
+
+<div id="one-click-buy" class="modal">
+    <div class="modal__close">&times;</div>
+    <div class="modal__form-header">
+        <div class="form-title modal__form-title">
+            Купить в один клик
+        </div>
+        <p class="text">
+            Оставьте Ваши данные и наш консультант с вами свяжется.
+        </p>
+    </div>
+    <label class="label modal__form-label">
+        Ваше имя<span>*</span>
+    </label>
+    <input class="input modal__form-input text" type="text" required>
+    <label for="" class="label ordering-form__item-label">
+        Ваш телефон<span>*</span>
+    </label>
+    <input type="text" class="input ordering-form__item-input text" required>
+    <label class="label modal__form-label">
+        Отзыв<span>*</span>
+    </label>
+    <textarea class="input textarea modal__form-textarea text" placeholder="Комментарий к заказу"></textarea>
+    <div class="modal__form-product">
+        <img src="img/order.png" alt="">
+        <div>
+            <p class="text">Тепловизор Pulsar Accolade XQ38 LRF</p>
+            <b>879 000 руб.</b>
+        </div>
+    </div>
+    <button class="button button--green form-btn" type="submit">
+        Отправить
+    </button>
+    <p class="modal__form-footer">
+        Нажимая кнопку «Отправить» я соглашаюсь с обработкой персональных данных в соответствии с <a href="user-agreement.html">политикой конфиденциальности.</a>
+    </p>
+</div>
+
+<div id="one-click-buy-thanks" class="modal modal__thanks">
+    <div class="modal__close">&times;</div>
+    <img class="modal__thanks-img" src="img/modal-check.svg" alt="">              
+    <h2 class="title modal__thanks-title">
+        Спасибо!
+    </h2>
+    <p class="modal__thanks-text">
+        Благодарим за заказ в Teplovizorro.<br>
+        В настоящий момент Ваш заказ обрабатывается.<br>
+        Мы в ближайшее время  позвоним<br>
+        Вам для уточнения.
+    </p>
+</div>

@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <form id="authorization" class="modal hide">
+                <h2 class="title modal__form-title">
+                    Авторизация
+                </h2>
+                <label for="" class="label">
+                    Эл. почта, логин<span>*</span>
+                </label>
+                <input type="text" class="input" required>
+                <label for="" class="label">
+                    Пароль<span>*</span>
+                </label>
+                <input class="input" type="password" minlength="6" maxlength="10" required>
+                <div class="modal__form-buttons">
+                    <button class="button enter-btn">Войти</button>
+                    <button class="forgot-password">
+                        Забыли пароль?
+                    </button>
+                </div>
+                <div class="modal__form-footer modal__form-footer--border">
+                    Если у вас еще нет учетной записи, <button class="registration-btn">зарегистрируйтесь</button>
+                </div>
+            </form>
+            
+        </div>
+        <div class="col-12 col-md-6 offset-md-3">
+            <form id="change-password" class="modal">
+                <h2 class="title modal__form-title">
+                    Изменение пароля
+                </h2>
+                <label for="" class="label">
+                    Эл. почта, логин<span>*</span>
+                </label>
+                <input type="email" class="input" required>
+                <button class="button send-password-btn">
+                    Выслать
+                </button>
+                <div class="modal__form-footer modal__form-footer--border">
+                    Укажите адрес электронной почты, с которым вы регистрировались ранее, и мы вышлем инструкции по смене пароля. 
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-md-6 offset-md-3">
+            <form id="registration" class="modal hide">
+                <h2 class="title modal__form-title">
+                    Регистрация
+                </h2>
+                <label for="" class="label">
+                    Введите ваш e-mail<span>*</span>
+                </label>
+                <input type="email" class="input" required>
+                <label for="" class="label">
+                    Придумайте пароль (не короче шести символов)<span>*</span>
+                </label>
+                <input id="newPassword" class="input" type="password" minlength="6" maxlength="10" required>
+                <label for="" class="label">
+                    Повторите пароль<span>*</span>
+                </label>
+                <input id="confirmPassword" class="input" type="password" minlength="6" maxlength="10" required>
+                <button class="button register-btn">
+                    Зарегистрироваться
+                </button>
+                <div class="modal__form-footer modal__form-footer--border">
+                    Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным <a href="user-agreement.html">здесь текстом.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
