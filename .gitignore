@@ -1,5 +1,5 @@
 node_modules
-src / img
-src / libs
+src/img
+src/libs
 package-lock.json
 package.json
