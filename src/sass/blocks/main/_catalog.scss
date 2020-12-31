@@ -59,8 +59,7 @@
 
     &__tag-dashed {
         padding-bottom: 2px;
-        border-bottom: $border;
-        border-style: dashed;
+        border-bottom: $border-width dashed $dark;
     }
 
     // .catalog__tag-num

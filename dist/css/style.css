@@ -1583,8 +1583,7 @@ hr {
 
 .catalog__tag-dashed {
   padding-bottom: 2px;
-  border-bottom: 0.7px solid rgba(79, 79, 79, 0.15);
-  border-style: dashed;
+  border-bottom: 0.7px dashed #4F4F4F;
 }
 
 .catalog__tag-num {
