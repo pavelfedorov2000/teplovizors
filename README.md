@@ -2,9 +2,19 @@ Multipage Teplovizors Online Store
 
 Technologies used in this project:
 - HTML5
-- SCSS (variables, mixins, media requests)
-- BEM-naming
-- Gulp
+- SCSS:
+  - nesting
+  - $variables
+  - @mixins - @includes
+  - @imports
+- BEM-naming (.block__element--modificator)
+- Gulp:
+  - src --> dist
+  - @@includes
+  - htmlmin, cssmin, jsmin
+  - autoprefixer
+  - imagemin
+  - browsersync
 - Jquery:
   - sliders
   - tabs
